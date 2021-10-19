@@ -1,0 +1,14 @@
+<table class="employee-table">
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="employee-table" *ngFor="let item of employees; let i = index">
+            <td>{{item.id}}</td>
+            <td><a class="link" (click)="goToUserDetails(item.id)">{{item.name}}</a></td>
+        </tr>
+    </tbody>
+</table>

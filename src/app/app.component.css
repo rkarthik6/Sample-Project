@@ -1,0 +1,9 @@
+.design {
+    background: #00ffff;
+    color:black;
+    font-size: 26px;
+}
+
+agm-map {
+    height: 300px;
+  }

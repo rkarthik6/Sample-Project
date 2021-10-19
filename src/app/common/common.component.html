@@ -1,0 +1,47 @@
+ {{title}}
+<br/>
+<br/>
+
+{{ 4 + 8}}
+<br/>
+<br/>
+
+<button [disabled]="isUnchanged">Disabled Button</button>
+<br/>
+<br/>
+
+<div [class.design]="showColour">
+    Angular Trainings
+</div>
+<br/>
+<a [style.text-decoration]="link">Logout</a>
+<br/>
+<br/>
+
+<input #name placeholder="enter name" [(ngModel)]='firstName'/>
+{{firstName | uppercase}}
+<br/>
+<br/>
+<div>
+    <div *ngIf="showDiv">textsadasd</div>
+    <div *ngIf="showDiv">textsadasd</div>
+    <div>textsadasd</div>
+    <div>textsadasd</div>
+</div>
+
+<button (click)="callValue(name.value)">Call</button>
+{{ secondName }}
+<br/>
+<br/>
+<hr/>
+<br/>
+<div>
+Form Sample
+<form (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
+    FirstName: <input type="text" required [(ngModel)]='firstName' [ngModelOptions]="{standalone: true}"/><br/><br/>
+    Password: <input type="password" [(ngModel)]='pwd' [ngModelOptions]="{standalone: true}"/><br/><br/>
+    Age: <input type="number" [(ngModel)]='age' [ngModelOptions]="{standalone: true}"/><br/><br/>
+    <button type="submit" value="submit">submit</button>
+
+</form>
+</div>
